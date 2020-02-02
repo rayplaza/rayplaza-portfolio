@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<title>Ray Plaza's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="rp-top">
+        <div class="rp-bar" id="myNavbar">
+            <a class="rp-bar-item rp-button rp-hover-black rp-hide-medium rp-hide-large rp-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="rp-bar-item rp-button">HOME</a>
+            <a href="#about" class="rp-bar-item rp-button rp-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="rp-bar-item rp-button rp-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="rp-bar-item rp-button rp-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="rp-bar-item rp-button rp-hide-small rp-right rp-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="rp-bar-block rp-white rp-hide rp-hide-large rp-hide-medium">
+            <a href="#about" class="rp-bar-item rp-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="rp-bar-item rp-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="rp-bar-item rp-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="rp-bar-item rp-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 rp-display-container rp-opacity-min" id="home">
+        <div class="rp-display-middle" style="white-space:nowrap;">
+            <span class="rp-center rp-padding-large rp-black rp-xlarge rp-wide rp-animate-opacity">RAY <span
+                    class="rp-hide-small">PLAZA'S</span> PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="rp-content rp-container rp-padding-64" id="about">
+        <h3 class="rp-center">ABOUT ME</h3>
+        <p class="rp-center"><em>Music and technology, my first loves.</em></p>
+        <p>I am a full stack developer with a focus in audio and video games. Adept in Python, Javascript and other
+            programming
+            languages to create beautiful websites or software apps. I have an eye for creation but also design. I am
+            well adept at using design tools such as Photoshop. I come from an art background which makes styling a
+            breeze.<br>
+            <br>
+            I have over eight years of experience engineering, editing, designing and composing music for the film and
+            tv industry. I am adept in both hardware and software audio, such as Protools, Logic Pro X, SSL and API
+            consoles. I have
+            used this skill to work on many highly regarded and Academy nominated films such as the Lego Movie and Thor
+            Ragnarok.<br>
+            <br>
+            I love to implement both mediums in any place I can which is why I have also done sound design for video
+            games using Wwise. This allows me to record the process and add those sounds to the games I love.</p>
+        <div class="rp-row">
+            <div class="rp-col m6 rp-center rp-padding-large">
+                <p><b><i class="fa fa-user rp-margin-right"></i>Raymond Plaza</b></p><br>
+                <img src="./rpimages/rpavatar.jpg" class="rp-round rp-image rp-opacity rp-hover-opacity-off"
+                    alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="rp-col m6 rp-hide-small rp-padding-large">
+                <p>Welcome to my website. I am originally from Yuma Arizona. Raised in a small border town called
+                    Gadsden. I am a first
+                    generation Latino American and I hold my culture very close to my heart. I moved to Snowflake
+                    Arizona during middle
+                    school and experienced a huge culture shock. I graduated high school from there and moved to Phoenix
+                    Arizona soon
+                    after to persue my music career. I ended up working fraud prevention with multiple financial
+                    institutions such as
+                    Chase and Bank of America. I also went to school at the Art Institute of Phoenix for Web Design.
+                    After some time I decided to pack my bags and move to Seattle where I thought I would
+                    persue a degree in audio but before I knew it the resession hit and I was forced to move back home
+                    to Yuma. There I
+                    dusted myself off and picked myself back up. After a few years I moved back to Phoenix and completed
+                    my audio certificate
+                    with The Conservatory of Recording Arts and Sciences. That took me to an internship with Mutato
+                    Muzika in Los Angeles where
+                    I later found myself getting hired by the institution and created music for many great films. I
+                    spent the past 7 years working
+                    there and decided that my calling was in technology. I joined General Assembly and completed thier
+                    "Software Engineering Immersive"
+                    program that gave me the skills to persue the next phase of my career. I have built many great apps
+                    using multiple programming languages
+                    such as Python and Javascript, as well as React and Django. I hope to find myself building many
+                    projects that marry my love of music and
+                    technology.
+                </p>
+            </div>
+        </div>
+        <p class="rp-large rp-center rp-padding-16">Im really good at:</p>
+        <p class="rp-wide"><i class="fa fa-laptop"></i>Software Engineering</p>
+        <div class="rp-light-grey">
+            <div class="rp-container rp-padding-small rp-dark-grey rp-center" style="width:90%">90%</div>
+        </div>
+        <p class="rp-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="rp-light-grey">
+            <div class="rp-container rp-padding-small rp-dark-grey rp-center" style="width:85%">85%</div>
+        </div>
+        <p class="rp-wide"><i class="fa fa-photo"></i>Music Composition</p>
+        <div class="rp-light-grey">
+            <div class="rp-container rp-padding-small rp-dark-grey rp-center" style="width:90%">90%</div>
+        </div>
+    </div>
+
+    <div class="rp-row rp-center rp-dark-grey rp-padding-16">
+        <div class="rp-quarter rp-section">
+            <span class="rp-xlarge">14+</span><br>
+            Partners
+        </div>
+        <div class="rp-quarter rp-section">
+            <span class="rp-xlarge">55+</span><br>
+            Projects Done
+        </div>
+        <div class="rp-quarter rp-section">
+            <span class="rp-xlarge">89+</span><br>
+            Happy Clients
+        </div>
+        <div class="rp-quarter rp-section">
+            <span class="rp-xlarge">150+</span><br>
+            Meetings
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 rp-display-container rp-opacity-min">
+        <div class="rp-display-middle">
+            <span class="rp-xxlarge rp-text-white rp-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="rp-content rp-container rp-padding-64" id="portfolio">
+        <h3 class="rp-center">MY CODING WORK</h3>
+        <p class="rp-center"><em>Here are some of my latest projects.<br> Click on the images to make
+                them bigger and find links to their respective github.</em></p><br>
+
+        <div class="rp-row-padding rp-center">
+            <div class="rp-col m3">
+                <img src="./rpimages/Cuethemusic.png" style="width:100%" onclick="onClick(this)"
+                    class="rp-hover-opacity" alt='<h2>Cue the Music App</h2> - This app was developed to be a cue sheet creator for music editors. 
+                    It has the ability to input information of the cue, composer, timecodes, total time and notes. 
+                    Its in its beginning stages and will have more functionality soon. Please visit my Github for more information on the app.<br>
+                    <a href="https://github.com/rayplaza/Cue-the-Music">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="./rpimages/pacoapp.jpeg" style="width:100%" onclick="onClick(this)" class="rp-hover-opacity"
+                    alt='<h2>Paco App</h2> - P.A.C.O. is an acronym for plugin audio collection organizer. PACO is an idea spawned from years of 
+                    audio work in the film post production and music industry. After years of working with hundreds of plugins and trying to keep 
+                    track of all of them we decided to try and make a difference in how we organize and share those plugins.<br>
+                    <a href="https://github.com/rayplaza/PACO/tree/master/paco">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="./rpimages/junkieapp.jpeg" style="width:100%" onclick="onClick(this)" class="rp-hover-opacity"
+                    alt='<h2>Junkie App</h2> - A place where collectors can go to to input their collection, organize, share, buy and sell thier 
+                    items with other likeminded collectors. Today we are starting with Vinyl Record junkies, tomorrow it will be comics and in the 
+                    future you will have every collection. You can input the album information into your collection, including grade and description. 
+                    Organize your collection and search your collection. Other users can comment on your collection. Once you find a better vinyl then 
+                    the one you have you can put that one up for sale on our Junkie Market. <br> <a href="https://github.com/adibfazli/junkie">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="./rpimages/blackjackblack.jpeg" style="width:100%" onclick="onClick(this)"
+                    class="rp-hover-opacity"
+                    alt='<h2>Black-Jack-Black</h2> - This is a typical BlackJack game in the theme of Jack Black. More specifically from the movie "Nacho Libre". 
+                    Its you, "Ignacio", versus the great "Ramses". He is the best! <br> <a href="https://github.com/rayplaza/BlackJack">Github Link</a>'>
+            </div>
+        </div>
+
+        <div class="rp-row-padding rp-center rp-section">
+            <div class="rp-col m3">
+                <img src="./rpimages/guitarcollector.png" style="width:100%" onclick="onClick(this)"
+                    class="rp-hover-opacity" alt='<h2>Guitar Collector App</h2> - This app allows you to keep track of your guitar collection. You can save the 
+                    information of your guitar, the pedals that go with your guitar setup and the services that you have done to your guitar. <br>
+                    <a href="https://github.com/rayplaza/Guitar-Collector">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="./rpimages/retrotactoe.png" style="width:100%" onclick="onClick(this)"
+                    class="rp-hover-opacity" alt='<h2>Retro-Tac-Toe</h2> - A retro looking tic tac toe game using Javascript game logic. <br>
+                    <a href="https://github.com/rayplaza/retrotactoe">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="./rpimages/mastermind.png" style="width:100%" onclick="onClick(this)" class="rp-hover-opacity"
+                    alt='<h2>React Mastermind App</h2> - A React.js game based off the 1973 board game Mastermind. You are able to log high scores and choose your difficulty. 
+                    The object of the game is to guess the color and pattern combination in enough tries and as quickly as possible.
+                    This app used the full MERN stack of Mongoose, Express, React and Node as well as Javascript and game logic.<br>
+                    <a href="https://github.com/rayplaza/mastermind">Github Link</a>'>
+            </div>
+
+            <div class="rp-col m3">
+                <img src="/rpimages/p8.jpg" style="width:100%" onclick="onClick(this)" class="rp-hover-opacity"
+                    alt="Sailing">
+            </div>
+            <button class="rp-button rp-padding-large rp-light-grey" style="margin-top:64px">LOAD MORE</button>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="rp-modal rp-black" onclick="this.style.display='none'">
+        <span class="rp-button rp-large rp-black rp-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="rp-modal-content rp-animate-zoom rp-center rp-transparent rp-padding-64">
+            <img id="img01" class="rp-image">
+            <p id="caption" class="rp-opacity rp-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 rp-display-container rp-opacity-min">
+        <div class="rp-display-middle">
+            <span class="rp-xxlarge rp-text-white rp-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="rp-content rp-container rp-padding-64" id="contact">
+        <h3 class="rp-center">LOCATION</h3>
+        <p class="rp-center"><em>I'd love to hear from you!</em></p>
+
+        <div class="rp-row rp-padding-32 rp-section">
+            <div class="rp-col m4 rp-container">
+                <img src="/rpimages/map.jpg" class="rp-image rp-round" style="width:100%">
+            </div>
+            <div class="rp-col m8 rp-panel">
+                <div class="rp-large rp-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw rp-hover-text-black rp-xlarge rp-margin-right"></i> Los Angeles CA,
+                    US<br>
+                    <i class="fa fa-phone fa-fw rp-hover-text-black rp-xlarge rp-margin-right"></i> Phone:
+                    424-672-5100<br>
+                    <a href="mailto:ray@pacoplaza.com" target="_blank">
+                        <i class="fa fa-envelope fa-fw rp-hover-text-black rp-xlarge rp-margin-right"></i> Email:
+                        ray@pacoplaza.com<br>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="rp-center rp-black rp-padding-64 rp-opacity rp-hover-opacity-off">
+        <a href="#home" class="rp-button rp-light-grey"><i class="fa fa-arrow-up rp-margin-right"></i>To the top</a>
+        <div class="rp-xlarge rp-section">
+            <a href="https://www.facebook.com/munditoplaza" target="_blank">
+                <i class="fa fa-facebook-official rp-hover-opacity"></i>
+            </a>
+            <a href="https://www.instagram.com/munditoplaza/" target="_blank">
+                <i class="fa fa-instagram rp-hover-opacity"></i>
+            </a>
+            <a href="https://twitter.com/MunditoPlaza" target="_blank">
+                <i class="fa fa-twitter rp-hover-opacity"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rayplaza/" target="_blank">
+                <i class="fa fa-linkedin rp-hover-opacity"></i>
+            </a>
+            <a href="https://github.com/rayplaza" target="_blank">
+                <i class="fa fa-github rp-hover-opacity"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
